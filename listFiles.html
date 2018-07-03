@@ -35,12 +35,12 @@
         function execute() {
             return gapi.client.drive.files.copy({
                     "fileId": "1B41vSP4ggurSr-FWFGfTXSmYTyD9cLUoBNYGCZ_t0v8",
+                    "title": "Hello Emma",
                     "convert": "false",
                     "ocr": "false",
                     "supportsTeamDrives": "true",
                     "visibility": "DEFAULT",
-                    "resource": {},
-                    "title": "Hello Emma"
+                    "resource": {}
                 })
                 .then(function (response) {
                         // Handle the results here (response.result has the parsed body).
