@@ -1,9 +1,3 @@
-/**
- * Sample JavaScript code for drive.files.copy
- * See instructions for running APIs Explorer code samples locally:
- * https://developers.google.com/explorer-help/guides/code_samples#javascript
- */
-
 function authenticate() {
     return gapi.auth2.getAuthInstance()
         .signIn({
@@ -40,6 +34,8 @@ function execute() {
         .then(function (response) {
             // Handle the results here (response.result has the parsed body).
             console.log('Response', response);
+            console.log(body.id);
+
         },
         function (err) {
             console.error('Execute error', err);
